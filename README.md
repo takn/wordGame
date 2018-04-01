@@ -1,12 +1,12 @@
 # Word Matching Challenge
 a twist on a find and match word game. Find the translations for the given word. 
 
-#Build / Running
+# Build / Running
 Just run ./gradlew build and make sure you look at the tests.
 
 You can install with standard gradle commands or via Android Studio
 
-#Hello!
+# Hello!
 Thank you for your review. 
 A few notes about this project.
 
