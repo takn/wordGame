@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ramirez.nelson.wordgame.WordGameActivity">
+
+    <ramirez.nelson.wordgame.presentation.views.GameGrid
+        android:id="@+id/grid_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" />
+
+    <ramirez.nelson.wordgame.presentation.views.WordBank
+        android:id="@+id/word_bank"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/grid_layout"
+        android:orientation="vertical"
+        android:padding="4dp">
+
+        <TextView
+            android:id="@+id/word_target"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/word_matches"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </ramirez.nelson.wordgame.presentation.views.WordBank>
+
+    <include layout="@layout/info_panel" />
+
+</RelativeLayout>
