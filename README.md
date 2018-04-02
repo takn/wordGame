@@ -2,7 +2,7 @@
 a twist on a find and match word game. Find the translations for the given word. 
 
 # Build / Running
-Just run ./gradlew build and make sure you look at the tests.
+Just run `./gradlew build installDebug` and make sure you look at the tests.
 
 You can install with standard gradle commands or via Android Studio
 
@@ -12,18 +12,18 @@ A few notes about this project.
 
 This is a project done in Kotlin, please excuse the lack of elegance, i'm still learning!
 
-The general approach was to use Clean Architecture for the overall structure of the project.
+The general approach was to use Clean Architecture for the overall structure of the project.  
 Normally the 'layers' would be in separate modules, but in this simple case they are just separated into packages.
 
 I like to write tests first, I find them very helpful when piecing stuff together.
-Usually i write tests for logic heavy stuff
+Usually i write tests for logic heavy stuff  
 For the presentation layer I went with an MVP approach, allowing the model to persist for the session on the application scope.
 
 
 Typically I would use dagger for DI, but i opted to leave it out in the interest of time  
 The composition of the objects lend themselves to to easy DI.
 
-The ui was left pretty barebones. The focus for this project was functionality.
+The ui was left pretty barebones. The focus for this project was functionality.  
 UI updates are handled via a couple of different Observables handled mostly by the GameManager
 
 I used a simple gridlayout instead of a recyclerview with a gridlayoutManager or something like that
@@ -44,8 +44,8 @@ The UX could be improved, right now when you complete a game, the 'info panel'
 immediately displays.
 
 Dagger needs to be implemented as well, but the structure for it is there.
-Two components are needed, an app component scope and an activity component scope.
-That would be sufficient
+Two components are needed, an app component scope and an activity component scope.  
+There is minor lint issues to clean up. I like to clean up lint before moving into UI work.
 
 
 
