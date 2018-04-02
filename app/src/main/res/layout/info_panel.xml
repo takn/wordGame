@@ -6,7 +6,7 @@
     android:id="@+id/info_panel"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/black"
+    android:background="@color/info_panel_background"
     android:orientation="vertical"
     android:visibility="visible"
     tools:showIn="@layout/activity_word_game_main">
@@ -22,5 +22,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:orientation="vertical" />
+        android:orientation="vertical"
+        android:padding="4dp" />
 </ramirez.nelson.wordgame.presentation.views.InfoPanel>
