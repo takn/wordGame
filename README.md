@@ -20,7 +20,7 @@ Usually i write tests for logic heavy stuff
 For the presentation layer I went with an MVP approach, allowing the model to persist for the session on the application scope.
 
 
-Typically I would use dagger for DI, but i opted to leave it out in the interest of time 
+Typically I would use dagger for DI, but i opted to leave it out in the interest of time  
 The composition of the objects lend themselves to to easy DI.
 
 The ui was left pretty barebones. The focus for this project was functionality.
@@ -32,7 +32,9 @@ about which approach works best.
 
 ## Challenging aspects?
 This was one of my first forays into Kotlin, I enjoyed it! I'm late to the party, i know
-It would have been interesting to try out coroutines in this
+
+It would have been interesting to try out coroutines in this  
+
 Parsing the json was laborious. I ended up implementing the pull parser that comes with Gson
 this was probably the most challenging part. 
 
