@@ -18,7 +18,7 @@ class DimenUtils {
     }
 
     private fun getStatusBarHeight(): Int {
-        //TODO get status bar height
-        return 70;
+        //TODO get status bar height, hardcoded for now
+        return 70
     }
 }

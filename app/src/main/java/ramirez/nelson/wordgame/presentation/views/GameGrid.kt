@@ -16,9 +16,9 @@ import ramirez.nelson.wordgame.domain.model.TileState
 import ramirez.nelson.wordgame.presentation.GamePresenter
 import ramirez.nelson.wordgame.presentation.utils.DimenUtils
 
-private val matchingColor = "#0000FF"
-private val matchedColor = "#00FF00"
-private val defaultColor = "#000000"
+private val matchingColor = "#E5B181"
+private val matchedColor = "#DAEDBD"
+private val defaultColor = "#7DBBC3"
 
 /**
  * Created by nelsonramirez on 3/28/18.

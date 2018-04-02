@@ -13,7 +13,7 @@ import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 /**
  * Created by nelsonramirez on 3/29/18.
  */
-class GameApplication : Application() {
+class WordGameApplication : Application() {
 
 
     private lateinit var gameManager: GameManager

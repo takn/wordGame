@@ -1,6 +1,5 @@
 package ramirez.nelson.wordgame.presentation
 
-import android.util.Log
 import android.view.View
 import ramirez.nelson.wordgame.domain.GameInfoUseCase
 import ramirez.nelson.wordgame.domain.model.WordGameModel
@@ -21,7 +20,6 @@ class GameInfoPresenter(val gameInfoUseCase: GameInfoUseCase) {
     }
 
     private fun updateVisibility(game: WordGameModel) {
-        Log.d("tag", "update visibility currentGame :: ${game.word} is complete? ${game.isComplete()}")
         var visibility = View.GONE
         if (game.isComplete()) visibility = View.VISIBLE
         _infoPanel.visibility = visibility

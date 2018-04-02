@@ -10,11 +10,8 @@ import ramirez.nelson.wordgame.domain.model.WordGameModel
 /**
  * Created by nelsonramirez on 3/29/18.
  */
-class GameManager(val fetchGameDataUseCase: FetchGameDataUseCase) {
+class GameManager(private val fetchGameDataUseCase: FetchGameDataUseCase) {
 
-
-    //TODO fetch as observable
-    private lateinit var gameData: List<WordGameModel>
 
     private lateinit var currentGame: WordGameModel
 
@@ -38,6 +35,7 @@ class GameManager(val fetchGameDataUseCase: FetchGameDataUseCase) {
         currentGame.addMatchedWord(match)
         if (currentGame.isComplete()) {
             currentGameObservable.onNext(currentGame)
+
         }
     }
 

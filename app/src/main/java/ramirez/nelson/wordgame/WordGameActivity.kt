@@ -20,21 +20,16 @@ class WordGameActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        var app: GameApplication = application as GameApplication
+        var app: WordGameApplication = application as WordGameApplication
 
         setContentView(R.layout.activity_word_game_main)
 
-        //TODO the gameManager would just be injected
+        //TODO this would just an injection module
         gameInfoPresenter = GameInfoPresenter(GameInfoUseCase(app.getGameManager()))
         gameInfoPresenter.init(info_panel)
 
         gamePresenter = GamePresenter(GameActionsUseCase(GameRules()), app.getGameManager())
         gamePresenter.init(grid_layout, word_bank)
-
-
-        //TODO retrofit and make cancellable
-
-//        gamePresenter.startGame(data)
 
 
     }
