@@ -30,16 +30,20 @@ I used a simple gridlayout instead of a recyclerview with a gridlayoutManager or
 I wanted to avoid havig an adapter. After implementing the whole GameGrid class I'm still wondering
 about which approach works best. 
 
-##Challenging aspects?
+## Challenging aspects?
 This was one of my first forays into Kotlin, I enjoyed it! I'm late to the party, i know
 It would have been interesting to try out coroutines in this
 Parsing the json was laborious. I ended up implementing the pull parser that comes with Gson
 this was probably the most challenging part. 
 
-#Enhancements
+# Enhancements
 The ui is very basic, with functionality complete that would be my next area of focus.
 The UX could be improved, right now when you complete a game, the 'info panel'
 immediately displays.
+
+Dagger needs to be implemented as well, but the structure for it is there.
+Two components are needed, an app component scope and an activity component scope.
+That would be sufficient
 
 
 
